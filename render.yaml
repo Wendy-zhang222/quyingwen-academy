@@ -2,7 +2,9 @@ services:
   - type: web
     name: quyingwen-academy-backend
     runtime: node
+    repo: https://github.com/Wendy-zhang222/quyingwen-academy
     plan: free
+    branch: main
     buildCommand: cd backend && npm install && npx prisma generate && npx prisma db push
     startCommand: cd backend && npm start
     envVars:
